@@ -1,0 +1,38 @@
+#%RAML 1.0
+title: sample3
+/search:
+  get:
+    queryParameters:
+      id:
+        
+        required: true
+    responses:
+          200:
+                body:
+                      application/json:
+                            example:
+                                  {
+                                    "user1":"test1",
+                                    "user2":"test2"
+                                  }
+          500:
+            body:
+              application/json:
+                example:
+                  {
+                    invalid
+                  }
+                                                                
+  post:
+
+          body:
+            application/json:
+              example:
+                {
+                "user1":"test3",
+                 "user2":"test4"
+              }
+                
+
+
+        
